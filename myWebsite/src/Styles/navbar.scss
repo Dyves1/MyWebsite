@@ -1,0 +1,23 @@
+#navbar {
+    padding: 0; /* Remove default padding */
+}
+
+#navbar li {
+    list-style: none;
+    height: 100%; /* Set the height to 100% of the navbar container */
+}
+
+#navbar li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    height: 100%; /* Set the height to 100% of the li element */
+}
+
+#navbar li a:hover {
+    background-color: #189765;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
