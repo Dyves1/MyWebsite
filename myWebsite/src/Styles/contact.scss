@@ -1,0 +1,49 @@
+.contact{
+    // background: red;
+    margin:10vh 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // border: 10px solid blue;
+box-shadow: 5px 1px 5px 5px black;    
+
+#floating_outlined{
+    border:1px solid white;
+}
+    form{
+        padding: 5vh;
+        // background: aqua;
+        width: 80vw;
+        div{
+            margin: 10px 0;
+        }     
+        input{
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 10px;
+            // margin: 10px 0;
+        }
+        textarea{
+            @extend input
+
+        }
+        .contactId {
+            display: flex;
+            gap: 10px;
+            justify-content: space-between;
+            align-items: center;
+          }
+
+    }
+
+    #map{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 600px){
+    .contact{
+        display: inline;
+        margin: 5vh;
+    }
+}
+

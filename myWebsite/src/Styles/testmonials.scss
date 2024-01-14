@@ -1,0 +1,83 @@
+.main{
+    width: 100%;
+    min-height: 380px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+.service{
+    background: #243b55;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    box-shadow: 0 0 20px -15px black;
+    z-index: 1;
+    transition: transform .7s;
+}
+.service-logo{
+    width: 130px;
+    height: 130px;
+border-radius: 50%;
+border: 10px solid #040b12;
+margin: -90px auto 0;
+background: #243b55;
+
+}
+
+.service h4{
+    height: 35px;
+    width: 80%;
+    background: #243b55;
+    margin: 50px auto;
+    position: relative;
+}
+.service h4::after{
+    content: '';
+    width: 40px;
+    height: 30px;
+    background: linear-gradient(to right, white,#C75B21);
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    z-index: -1;
+}
+.service h4::before{
+    content: '';
+    width: 40px;
+    height: 30px;
+    background: linear-gradient(to left, white,#C75B21);
+    position: absolute;
+    left: -5px;
+    bottom: -5px;
+    z-index: -1;
+}
+.shadow1 {
+    height: 200px;
+    width: 80%;
+    background: #243b55;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0;
+    left: 10%;
+    z-index: -1;
+    box-shadow: 0 0 20px -15px;
+    transition: transform .7s;
+
+}
+.shadow2 {
+    height: 200px;
+    width: 64%;
+    background: #243b55;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0;
+    left: 18%;
+    z-index: -2;
+
+}
+.main:hover .service {
+    transform: translateY(-50px);
+}
+.main:hover .shadow1 {
+    transform: translateY(-25px);
+}

@@ -5,6 +5,8 @@ import AboutContainer from './Containers/AboutContainer'
 import BlogContainer from './Containers/BlogContainer'
 import ContactContainer from './Containers/ContactContainer'
 import Footer from './Components/Footer'
+import Navbar from './Components/Navbar'
+import TestmonialsContainer from './Containers/TestmonialsContainer'
 
 
 function App() {
@@ -12,8 +14,10 @@ function App() {
 
   return (
     <>
+    <Navbar/>
      <HomeContainer/>
      <AboutContainer/>
+     <TestmonialsContainer/>
      <BlogContainer/>
      <ContactContainer/>
      <Footer/>
